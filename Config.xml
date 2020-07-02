@@ -1,0 +1,51 @@
+<Configuration>
+	<MonitoringInfo>
+		<Stand Name="Stand1">
+			<Host>ip:port</Host>
+		</Stand>
+		<Stand Name="Stand2">
+			<Host>ip:port</Host>
+		</Stand>	
+		<Stand Name="Stand4"> 
+			<Host>ip:port</Host>
+		</Stand>	
+		
+		<partOfRequest>/url/getHostData?s=</partOfRequest>		
+	</MonitoringInfo>
+	<AdminUsers>
+		<Users>user1,user1,</Users>
+		<GroupAdminEmail>group@mail</GroupAdminEmail>
+	</AdminUsers>
+
+
+	<Module Name="module1"> 
+		<Stand Name="Stand1">
+			<Users>user1, user1</Users> 	
+			<TechWindow>None</TechWindow> 
+		</Stand>
+		<Stand Name="Stand2">
+			<Users>user1, user2</Users> 	
+			<TechWindow>None</TechWindow> 
+		</Stand> 
+		<Stand Name="Stand3">
+			<Users>user4</Users> 	
+			<TechWindow>None</TechWindow> 
+ 	 		
+	</Module>	
+	<Module Name="module1,module2"> 
+		<Stand Name="Stand1">
+			<Users>user1, user2</Users> 	
+			<TechWindow>7:30-9:00,12:30-14:00,17:30-19:00</TechWindow> 
+		</Stand>
+		<Stand Name="Stand2">
+			<Users>user1</Users> 	
+			<TechWindow>7:30-9:00,12:30-14:00,17:30-19:00</TechWindow> 
+		</Stand>
+		<Stand Name="Stand2">
+			<Users></Users> 	
+			<TechWindow>None</TechWindow> 
+		</Stand>		
+	</Module>
+
+	
+</Configuration>	
